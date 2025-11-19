@@ -299,6 +299,80 @@ body {
   background: #e8e6e0;
 }
 
+.signature-locations {
+  max-width: 700px;
+  margin: 3rem auto 0;
+  padding: 2rem;
+  background: #f5f4f0;
+  border-radius: 12px;
+  border: 2px solid #6b8c5f;
+}
+
+.signature-locations h3 {
+  font-size: 1.5rem;
+  color: #3d3d3d;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.locations-subtitle {
+  text-align: center;
+  color: #5a5550;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+
+.signature-locations ul {
+  list-style: none;
+  padding: 1rem;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #d4d0c5;
+}
+
+.signature-locations ul::-webkit-scrollbar {
+  width: 8px;
+}
+
+.signature-locations ul::-webkit-scrollbar-track {
+  background: #e8e6e0;
+  border-radius: 4px;
+}
+
+.signature-locations ul::-webkit-scrollbar-thumb {
+  background: #6b8c5f;
+  border-radius: 4px;
+}
+
+.signature-locations ul::-webkit-scrollbar-thumb:hover {
+  background: #5d7c5a;
+}
+
+.signature-locations li {
+  padding: 0.75rem 1rem;
+  font-size: 1.05rem;
+  color: #3d3d3d;
+  border-bottom: 1px solid #e8e6e0;
+  transition: background-color 0.2s;
+}
+
+.signature-locations li:hover {
+  background-color: #f9f8f6;
+}
+
+.signature-locations li:last-child {
+  border-bottom: none;
+}
+
+.signature-locations strong {
+  color: #5d7c5a;
+  font-weight: 600;
+}
+
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
