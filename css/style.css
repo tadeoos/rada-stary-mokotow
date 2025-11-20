@@ -525,6 +525,10 @@ body {
   margin: 0 auto;
 }
 
+.test {
+  color: red;
+}
+
 #newsletter-success-message {
   display: none;
   color: #5d7c5a;
