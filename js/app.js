@@ -1,5 +1,5 @@
 // FAQ Accordion functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
@@ -27,5 +27,29 @@ document.addEventListener('DOMContentLoaded', function() {
         answer.style.maxHeight = null;
       }
     });
+  });
+
+  const form = document.getElementById("newsletterForm");
+  const message = document.getElementById("newsletter-success-message");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // zapobiegamy przeładowaniu
+    const formData = new FormData(form);
+    fetch("https://script.google.com/macros/s/AKfycbzvH_m_BYNoFbofqCDB4GzRl9kbNtn1_4-eClUPQnJFPMcZokXY3EExewy8QEdkEVoY/exec", {
+      method: "POST",
+      body: formData,
+    })
+      .then(res => {
+        if (res.ok) {
+          form.reset(); // czyści formularz
+          message.style.display = "block"; // pokazuje komunikat
+        } else {
+          alert("Coś poszło nie tak.");
+        }
+      })
+      .catch(err => {
+        console.error("Błąd:", err);
+        alert("Błąd połączenia.");
+      });
   });
 });
