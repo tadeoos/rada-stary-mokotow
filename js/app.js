@@ -26,7 +26,7 @@ const fallbackFAQ = [
 async function loadFAQFromSheet() {
   // Replace with your published Google Sheets CSV URL
   // Format: https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/export?format=csv&gid=0
-  const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQkTsDlSG13XdlGMbaHnShakPBKbulFFundQmFz-jTNL-_DPCsSZi6T7-rxjOdp20OFp4fEjwwn_SdP/pub?gid=0&single=true&output=csv';
+  const SHEET_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTAToFFjlhNWyIIPl8S0C3kSx5x-9PT7yWC4FtF6Vd8SCR6FHtpkgtAyFOulwXUS3R6TFW4_TV8svMr/pub?gid=0&single=true&output=csv';
 
   try {
     const response = await fetch(SHEET_URL);
@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded', async function () {
     form.addEventListener("submit", function (e) {
       e.preventDefault();
       const formData = new FormData(form);
-      fetch("https://script.google.com/macros/s/AKfycbzvH_m_BYNoFbofqCDB4GzRl9kbNtn1_4-eClUPQnJFPMcZokXY3EExewy8QEdkEVoY/exec", {
+      fetch("https://script.google.com/macros/s/AKfycbxMJYZ6GxugnNAASzCT7L5mCPcvnUwJH6ZW7DYpiUOKqBfFmLcy3vwSIkDKqdtgFU4R/exec", {
         method: "POST",
         body: formData,
       })
