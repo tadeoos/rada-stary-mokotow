@@ -119,8 +119,46 @@ function initFAQAccordion() {
   });
 }
 
+// Animate signature counter
+function animateCounter() {
+  const progressFill = document.querySelector('.progress-fill');
+  const counterCurrent = document.querySelector('.counter-current');
+  const counterTarget = document.querySelector('.counter-target');
+
+  if (!progressFill || !counterCurrent || !counterTarget) return;
+
+  const currentCount = parseInt(counterCurrent.textContent);
+  const targetCount = parseInt(counterTarget.textContent);
+  const targetProgress = (currentCount / targetCount) * 100;
+
+  // Animate progress bar
+  setTimeout(() => {
+    progressFill.style.width = targetProgress.toFixed(2) + '%';
+  }, 300);
+
+  // Animate number counting
+  const duration = 1500; // 1.5 seconds
+  const steps = 60;
+  const stepValue = currentCount / steps;
+  const stepDuration = duration / steps;
+
+  let displayCount = 0;
+  const counter = setInterval(() => {
+    displayCount += stepValue;
+    if (displayCount >= currentCount) {
+      counterCurrent.textContent = currentCount;
+      clearInterval(counter);
+    } else {
+      counterCurrent.textContent = Math.floor(displayCount);
+    }
+  }, stepDuration);
+}
+
 // Initialize everything on page load
 document.addEventListener('DOMContentLoaded', async function () {
+  // Animate signature counter
+  animateCounter();
+
   // Load and render FAQ
   const faqs = await loadFAQFromSheet();
   renderFAQ(faqs);
