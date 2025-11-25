@@ -25,12 +25,12 @@ html {
  */
 
 ::-moz-selection {
-  background: #a8bf98;
+  background: #7ec19f;
   text-shadow: none;
 }
 
 ::selection {
-  background: #a8bf98;
+  background: #7ec19f;
   text-shadow: none;
 }
 
@@ -42,7 +42,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #c4c0b5;
+  border-top: 1px solid #e5d9c9;
   margin: 1em 0;
   padding: 0;
 }
@@ -95,7 +95,7 @@ body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
   color: #3d3d3d;
-  background-color: #e8e6e0;
+  background-color: #fcf3e8;
 }
 
 .container {
@@ -106,8 +106,8 @@ body {
 
 /* Header */
 .header {
-  background: linear-gradient(135deg, #5d7c5a 0%, #4a6548 100%);
-  color: #f5f4f0;
+  background: linear-gradient(135deg, #1f7744 0%, #186337 100%);
+  color: #fcf3e8;
   padding: 2rem 0;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
@@ -126,10 +126,10 @@ body {
 
 /* Hero Section */
 .hero {
-  background: #f5f4f0;
+  background: #fcf3e8;
   padding: 4rem 0;
   text-align: center;
-  border-bottom: 1px solid #c4c0b5;
+  border-bottom: 1px solid #e5d9c9;
 }
 
 .hero h2 {
@@ -149,26 +149,26 @@ body {
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(135deg, #6b8c5f 0%, #5d7c5a 100%);
-  color: #f5f4f0;
+  background: linear-gradient(135deg, #1f7744 0%, #186337 100%);
+  color: #fcf3e8;
   padding: 1rem 2.5rem;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 6px rgba(74, 101, 72, 0.3);
+  box-shadow: 0 4px 6px rgba(31, 119, 68, 0.3);
 }
 
 .cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(74, 101, 72, 0.4);
+  box-shadow: 0 6px 12px rgba(31, 119, 68, 0.4);
 }
 
 /* About Section */
 .about {
   padding: 4rem 0;
-  background: #e8e6e0;
+  background: #f5ede0;
 }
 
 .about h2,
@@ -196,7 +196,7 @@ body {
 .faq-question::after {
   content: '+';
   font-size: 1.5rem;
-  color: #6b8c5f;
+  color: #1f7744;
   font-weight: 400;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -213,12 +213,12 @@ body {
 }
 
 .card {
-  background: #f5f4f0;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
-  border: 1px solid #d4d0c5;
+  border: 1px solid #e5d9c9;
 }
 
 .card:hover {
@@ -240,7 +240,7 @@ body {
 /* Area Map Section */
 .area-map {
   padding: 4rem 0;
-  background: white;
+  background: #fef9f3;
 }
 
 .map-container {
@@ -255,7 +255,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   margin-bottom: 1.5rem;
-  border: 2px solid #d4d0c5;
+  border: 2px solid #e5d9c9;
 }
 
 .map-description {
@@ -269,7 +269,7 @@ body {
 /* Why Section */
 .why {
   padding: 4rem 0;
-  background: #f5f4f0;
+  background: #fcf3e8;
 }
 
 .benefits {
@@ -281,8 +281,8 @@ body {
 .benefits li {
   padding: 1rem 1.5rem;
   margin-bottom: 1rem;
-  background: #e8e6e0;
-  border-left: 4px solid #6b8c5f;
+  background: #f5ede0;
+  border-left: 4px solid #1f7744;
   border-radius: 4px;
   font-size: 1.1rem;
   color: #3d3d3d;
@@ -310,29 +310,29 @@ body {
 }
 
 .info-box a {
-  color: #5d7c5a;
+  color: #1f7744;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .info-box a:hover {
-  color: #4a6548;
+  color: #186337;
   text-decoration: underline;
 }
 
 /* Signatures Section */
 .signatures {
   padding: 4rem 0;
-  background: #e8e6e0;
+  background: #f5ede0;
 }
 
 .signature-locations {
   max-width: 700px;
   margin: 3rem auto 0;
   padding: 2rem;
-  background: #f5f4f0;
+  background: #ffffff;
   border-radius: 12px;
-  border: 2px solid #6b8c5f;
+  border: 2px solid #1f7744;
 }
 
 .signature-locations h3 {
@@ -356,9 +356,9 @@ body {
   margin: 0;
   max-height: 400px;
   overflow-y: auto;
-  background: white;
+  background: #fcf3e8;
   border-radius: 8px;
-  border: 1px solid #d4d0c5;
+  border: 1px solid #e5d9c9;
 }
 
 .signature-locations ul::-webkit-scrollbar {
@@ -366,29 +366,29 @@ body {
 }
 
 .signature-locations ul::-webkit-scrollbar-track {
-  background: #e8e6e0;
+  background: #f5ede0;
   border-radius: 4px;
 }
 
 .signature-locations ul::-webkit-scrollbar-thumb {
-  background: #6b8c5f;
+  background: #1f7744;
   border-radius: 4px;
 }
 
 .signature-locations ul::-webkit-scrollbar-thumb:hover {
-  background: #5d7c5a;
+  background: #186337;
 }
 
 .signature-locations li {
   padding: 0.75rem 1rem;
   font-size: 1.05rem;
   color: #3d3d3d;
-  border-bottom: 1px solid #e8e6e0;
+  border-bottom: 1px solid #f5ede0;
   transition: background-color 0.2s;
 }
 
 .signature-locations li:hover {
-  background-color: #f9f8f6;
+  background-color: #fef9f3;
 }
 
 .signature-locations li:last-child {
@@ -396,7 +396,7 @@ body {
 }
 
 .signature-locations strong {
-  color: #5d7c5a;
+  color: #1f7744;
   font-weight: 600;
 }
 
@@ -408,12 +408,12 @@ body {
 }
 
 .step {
-  background: #f5f4f0;
+  background: #ffffff;
   padding: 2rem;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid #d4d0c5;
+  border: 1px solid #e5d9c9;
 }
 
 .step-number {
@@ -422,7 +422,7 @@ body {
   justify-content: center;
   width: 60px;
   height: 60px;
-  background: linear-gradient(135deg, #b8956a 0%, #a67c52 100%);
+  background: linear-gradient(135deg, #4272b7 0%, #2f5a9e 100%);
   color: #ffffff;
   border-radius: 50%;
   font-size: 1.5rem;
@@ -444,7 +444,7 @@ body {
 /* FAQ Section */
 .faq {
   padding: 4rem 0;
-  background: #e8e6e0;
+  background: #f5ede0;
 }
 
 .faq h2 {
@@ -461,11 +461,11 @@ body {
 }
 
 .faq-item {
-  background: white;
+  background: #ffffff;
   margin-bottom: 1rem;
   border-radius: 8px;
   overflow: hidden;
-  border: 1px solid #d4d0c5;
+  border: 1px solid #e5d9c9;
   transition: box-shadow 0.2s;
 }
 
@@ -480,7 +480,7 @@ body {
 .faq-question {
   width: 100%;
   padding: 1.5rem 2rem;
-  background: white;
+  background: #ffffff;
   border: none;
   text-align: left;
   font-size: 1.2rem;
@@ -495,13 +495,13 @@ body {
 }
 
 .faq-question:hover {
-  background-color: #f9f8f6;
+  background-color: #fef9f3;
 }
 
 .faq-question::after {
   content: '+';
   font-size: 1.5rem;
-  color: #6b8c5f;
+  color: #1f7744;
   font-weight: 400;
   transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -537,10 +537,10 @@ body {
   max-width: 700px;
   margin: 3rem auto 0;
   padding: 2.5rem;
-  background: #f5f4f0;
+  background: #ffffff;
   border-radius: 12px;
   text-align: center;
-  border: 2px solid #6b8c5f;
+  border: 2px solid #1f7744;
 }
 
 .download-section h3 {
@@ -561,19 +561,19 @@ body {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #6b8c5f 0%, #5d7c5a 100%);
-  color: #f5f4f0;
+  background: linear-gradient(135deg, #1f7744 0%, #186337 100%);
+  color: #fcf3e8;
   border-radius: 8px;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 600;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 6px rgba(74, 101, 72, 0.3);
+  box-shadow: 0 4px 6px rgba(31, 119, 68, 0.3);
 }
 
 .download-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(74, 101, 72, 0.4);
+  box-shadow: 0 6px 12px rgba(31, 119, 68, 0.4);
 }
 
 .download-button svg {
@@ -583,7 +583,7 @@ body {
 /* Newsletter Section */
 .newsletter {
   padding: 4rem 0;
-  background: white;
+  background: #fef9f3;
   text-align: center;
 }
 
@@ -602,7 +602,7 @@ body {
 
 #newsletter-success-message {
   display: none;
-  color: #5d7c5a;
+  color: #1f7744;
 }
 
 .form-group {
@@ -615,9 +615,9 @@ body {
   flex: 1;
   padding: 1rem 1.5rem;
   font-size: 1rem;
-  border: 2px solid #d4d0c5;
+  border: 2px solid #e5d9c9;
   border-radius: 8px;
-  background: #f5f4f0;
+  background: #fcf3e8;
   color: #3d3d3d;
   font-family: inherit;
   transition: border-color 0.2s, background-color 0.2s;
@@ -625,8 +625,8 @@ body {
 
 .form-group input[type="email"]:focus {
   outline: none;
-  border-color: #6b8c5f;
-  background: white;
+  border-color: #1f7744;
+  background: #ffffff;
 }
 
 .form-group input[type="email"]::placeholder {
@@ -635,21 +635,21 @@ body {
 
 .submit-button {
   padding: 1rem 2rem;
-  background: linear-gradient(135deg, #6b8c5f 0%, #5d7c5a 100%);
-  color: #f5f4f0;
+  background: linear-gradient(135deg, #1f7744 0%, #186337 100%);
+  color: #fcf3e8;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 6px rgba(74, 101, 72, 0.3);
+  box-shadow: 0 4px 6px rgba(31, 119, 68, 0.3);
   font-family: inherit;
 }
 
 .submit-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(74, 101, 72, 0.4);
+  box-shadow: 0 6px 12px rgba(31, 119, 68, 0.4);
 }
 
 .submit-button:active {
@@ -666,7 +666,7 @@ body {
 /* Contact Section */
 .contact {
   padding: 4rem 0;
-  background: #e8e6e0;
+  background: #f5ede0;
 }
 
 .contact-info {
@@ -682,13 +682,13 @@ body {
 }
 
 .contact-info a {
-  color: #5d7c5a;
+  color: #1f7744;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .contact-info a:hover {
-  color: #4a6548;
+  color: #186337;
   text-decoration: underline;
 }
 
@@ -701,8 +701,8 @@ body {
 
 /* Footer */
 .footer {
-  background: #4a6548;
-  color: #f5f4f0;
+  background: #186337;
+  color: #fcf3e8;
   padding: 2rem 0;
   text-align: center;
 }
