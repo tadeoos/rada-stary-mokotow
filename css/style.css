@@ -420,79 +420,63 @@ body {
   background: #f5ede0;
 }
 
-.signature-locations {
+.signature-place {
   max-width: 700px;
-  margin: 3rem auto 0;
-  padding: 2rem;
+  margin: 0 auto;
+  padding: 2.5rem;
   background: #ffffff;
   border-radius: 12px;
   border: 2px solid #1f7744;
+  text-align: center;
 }
 
-.signature-locations h3 {
-  font-size: 1.5rem;
+.signature-place-icon {
+  font-size: 2.5rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.signature-place h3 {
+  font-size: 1.75rem;
   color: #3d3d3d;
   margin-bottom: 0.5rem;
-  text-align: center;
 }
 
-.locations-subtitle {
-  text-align: center;
-  color: #5a5550;
-  font-size: 1rem;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-.signature-locations ul {
-  list-style: none;
-  padding: 1rem;
-  margin: 0;
-  max-height: 400px;
-  overflow-y: auto;
-  background: #fcf3e8;
-  border-radius: 8px;
-  border: 1px solid #e5d9c9;
-}
-
-.signature-locations ul::-webkit-scrollbar {
-  width: 8px;
-}
-
-.signature-locations ul::-webkit-scrollbar-track {
-  background: #f5ede0;
-  border-radius: 4px;
-}
-
-.signature-locations ul::-webkit-scrollbar-thumb {
-  background: #1f7744;
-  border-radius: 4px;
-}
-
-.signature-locations ul::-webkit-scrollbar-thumb:hover {
-  background: #186337;
-}
-
-.signature-locations li {
-  padding: 0.75rem 1rem;
-  font-size: 1.05rem;
+.signature-place-address {
+  font-size: 1.1rem;
   color: #3d3d3d;
-  border-bottom: 1px solid #f5ede0;
-  transition: background-color 0.2s;
+  margin-bottom: 0.25rem;
 }
 
-.signature-locations li:hover {
-  background-color: #fef9f3;
+.signature-place-hours {
+  font-size: 1rem;
+  color: #5a5550;
+  font-style: italic;
+  margin-bottom: 1.5rem;
 }
 
-.signature-locations li:last-child {
-  border-bottom: none;
+.signature-place-instruction {
+  font-size: 1.05rem;
+  color: #5a5550;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
-.signature-locations strong {
+.signature-place-map {
+  display: inline-block;
   color: #1f7744;
   font-weight: 600;
+  font-size: 1.05rem;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.2s, color 0.2s;
 }
+
+.signature-place-map:hover {
+  color: #186337;
+  border-bottom-color: #186337;
+}
+
 
 .steps {
   display: grid;
@@ -860,6 +844,10 @@ body {
 
   .submit-button {
     width: 100%;
+  }
+
+  .signature-place {
+    padding: 2rem 1.25rem;
   }
 }
 
